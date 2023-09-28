@@ -1,10 +1,80 @@
-<html>
-<h1>The Portfolio of Nickolas Cerrone</h1>
-
-<h2>Projects</h2>
-
-<ul>
-<li><a href="https://ncerrone.itch.io/metroid-remake">Metroid (Unity Remaster)</a></li>
-</ul>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nickolas Cerrone's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding: 1em;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            background: white;
+            padding: 1em;
+            margin: 1em;
+            width: 30%;
+            box-shadow: 2px 2px 12px #aaa;
+        }
+        .card img {
+            width: 100%;
+        }
+        .card h3 {
+            margin-bottom: 1em;
+        }
+        .card p {
+            margin-bottom: 1em;
+        }
+        .card a {
+            display: inline-block;
+            background: #50b3a2;
+            color: white;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nickolas Cerrone</h1>
+        <p>Computer Science Student at the University of Michigan</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="card" id="projects">
+            <h3>Metroid Remake</h3>
+            <p>I developed a remake of Metroid using Unity and C#. In this project, I focused on creating seamless player movement and animations, implementing sound design, and designing levels that provide an engaging user experience.</p>
+            <p>Some of the features I worked on include a health system, knockback and damage interactions, player invincibility frames, and powerups/collectables. I also implemented doors and room transitions, camera following and bounding, and a custom magnet beam mechanic using Unity/C# features like coroutines and the singleton design pattern.</p>
+            <a href="https://ncerrone.itch.io/metroid-remake" target="_blank">View Project</a>
+        </div>
+    </div>
+</body>
 </html>
