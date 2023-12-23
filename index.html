@@ -11,7 +11,7 @@
             padding: 0;
         }
         header {
-            background: #50b3a2;
+            background: #30cf65;
             color: white;
             text-align: center;
             padding: 1em 0;
@@ -34,9 +34,9 @@
         }
         .card {
             background: white;
+            max-width: 500px;
             padding: 1em;
             margin: 1em;
-            width: 30%;
             box-shadow: 2px 2px 12px #aaa;
         }
         .card img {
@@ -50,43 +50,119 @@
         }
         .card a {
             display: inline-block;
-            background: #50b3a2;
+            background: #30cf65;
             color: white;
             padding: 0.5em 1em;
             text-decoration: none;
             border-radius: 5px;
+        }
+
+        .game-description, .contributions {
+            padding: 0.5em 0;
+            margin-bottom: 1em;
+        }
+        .contributions {
+            background-color: #eef9ef;
+            border-left: 3px solid #30cf65;
+            padding-left: 1em;
+        }
+        footer {
+            background: #30cf65;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .about {
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Nickolas Cerrone</h1>
-        <p>Computer Science Student at the University of Michigan</p>
+        <div class="about">
+            <p>Hello, I am a Computer Science Student at the University of Michigan and programming is my passion. In my free time, I love to run long distances (currently working up to a marathon) and playing games!</p>
+        </div>
     </header>
     <nav>
-        <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
     <div class="container">
         <div class="card" id="projects">
-            <h3>Metroid Remake</h3>
-            <p>I developed a remake of Metroid using Unity and C#. In this project, I focused on creating seamless player movement and animations, implementing sound design, and designing levels that provide an engaging user experience.</p>
-            <p>Some of the features I worked on include a health system, knockback and damage interactions, player invincibility frames, and powerups/collectables. I also implemented doors and room transitions, camera following and bounding, and a custom magnet beam mechanic using Unity/C# features like coroutines and the singleton design pattern.</p>
-            <a href="https://ncerrone.itch.io/metroid-remake" target="_blank">Web Build</a>
+            <img src="metroid-header.png" alt="Metroid Remake">
+            <!-- Game Description -->
+            <div class="game-description">
+                <p>A remake of the NES hit Metroid! Navigate through the perilous Brinstar and defeat the lurking space monsters. Explore the classic dungeon, and you might even find some new goodies hidden around.</p>
+            </div>
+            <div class="contributions">
+                Contributions:
+                <ul>
+                    <li>Animations creation and implementation.</li>
+                    <li>Development of a health system.</li>
+                    <li>Knockback and damage interactions.</li>
+                    <li>Player invincibility frames.</li>
+                    <li>Powerups and collectables design.</li>
+                    <li>Doors and room transitions.</li>
+                    <li>Camera following and bounding features.</li>
+                    <li>Custom magnet beam mechanic.</li>
+                </ul>
+            </div>
+            
+            <a href="https://drive.google.com/drive/folders/1lDOPUjDTCHZNuQ5Hv3jxYu4cEswRJEa_?usp=sharing" target="_blank">Download Link (Google Drive)</a>
         </div>
         <div class="card">
-            <h3>Note Goats</h3>
-            <p>Note Goats is a 2-player rhythm party game where your goal is to collect as many carrots as possible while avoiding the rhythmic hazards. I developed this game solo in unity.</p>
-            <a href="https://drive.google.com/drive/folders/10oShLBeDqWClNub59qKK15Lc9SdvA6Vm?usp=sharing">Download Link (Google Drive)</a>
-        </div>
-        <div class="card">
-            <h3>Drawn Together</h3>
-            <p>Drawn Together is a 3D puzzle platformer where the drawings Skrib and Sketch have come to life and are looking to restore their tattered storybook. With Skrib's sheild and Sketch's copter, you must work together to solve puzzles and find their missing pages.</p>
-            <p>I worked on almost every aspect of this game, whether it was character abilities, modeling, level design, UI, etc. My biggest contributions would be the development of the split screen and cinematic cameras, the entire tutorial level design, and character abilities. Additionally, I created the trailer for the game.</p>
-            <a href="https://drawn-together-studios.itch.io/drawn-together">Download Here (itch.io)</a>
+            <img src="note-goats-header.png" alt="Note Goats">
+            <div class="game-description">
+                <p>Note Goats is a 2-player rhythm party game two goats go head-to-head in a rhythmic arena. Dodge dancing obstacles while collecting carrots to score the most points and defeat your opponent!</p>
+            </div>
+            <div class="contributions">
+                Contributions (solo project):
+                <ul>
+                    <li>Developed a robust rhythm system to judge input timings.</li>
+                    <li>Created an audio and visual calibration system to ensure in-sync gameplay.</li>
+                    <li>Designed a grid movement and item spawning system to enable simple and clear gameplay.</li>
+                    <li>Iterated on a rhythmic-hazard system to keep players engaged.</li>
+                </ul>
+            </div>
+            <a href="https://drive.google.com/drive/folders/10oShLBeDqWClNub59qKK15Lc9SdvA6Vm?usp=sharing" target="_blank">Download Link (Google Drive)</a>
         </div>
 
+        <div class="card">
+            <img src="drawn-together-header.png" alt="Drawn Together">
+            <div>
+                <p>Drawn Together is a 3D puzzle platformer where the drawings Skrib and Sketch have come to life and are looking to restore their tattered storybook. With Skrib's sheild and Sketch's copter, you must work together to solve puzzles and find their missing pages.</p>
+            </div>
+
+            <div class="contributions">
+                Contributions:
+                <ul>
+                    <li>Designed and implemented unique character abilities.</li>
+                    <li>Developed innovative split-screen and cinematic camera features.</li>
+                    <li>Completed design of the tutorial level.</li>
+                    <li>Implemented in-game UI and title screen.</li>
+                    <li>Realized narrative into game via cutscenes.</li>
+                    <li>Lead creation of the game's trailer.</li>
+                    <li>Spearhead game's marketing efforts.</li>
+                </ul>
+            </div>
+            
+            <a href="https://youtu.be/bVChT4zv2VU" target="_blank">Watch the Trailer</a>
+            <a href="https://drawn-together-studios.itch.io/drawn-together" target="_blank">Download Link (itch.io)</a>
+        </div>
     </div>
+    <footer id="contact">
+        <h3>Contact Information</h3>
+            <p>Email: nickolas.cerrone@example.com</p>
+            <a href="https://www.linkedin.com/in/nickolas-cerrone-66880425a/" target="_blank">LinkedIn</a>
+            <p>GitHub: ncerroneumich</p>
+    </footer>
 </body>
 </html>
