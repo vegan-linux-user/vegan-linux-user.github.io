@@ -56,6 +56,16 @@
             text-decoration: none;
             border-radius: 5px;
         }
+        .card button {
+            border: none;
+            display: inline-block;
+            background: #30cf65;
+            color: white;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 15px;
+        }
 
         .game-description, .contributions {
             padding: 0.5em 0;
@@ -96,7 +106,7 @@
         <a href="#contact">Contact</a>
     </nav>
     <div class="container">
-        <div class="card" id="projects">
+        <div class="card">
             <img src="metroid-header.png" alt="Metroid Remake">
             <!-- Game Description -->
             <div class="game-description">
@@ -115,8 +125,14 @@
                     <li>Custom magnet beam mechanic.</li>
                 </ul>
             </div>
-            
+            <button onclick="toggleScreenshots('screenshots1')">Show screenshots</button>
             <a href="https://drive.google.com/drive/folders/1lDOPUjDTCHZNuQ5Hv3jxYu4cEswRJEa_?usp=sharing" target="_blank">Download Link (Google Drive)</a>
+            <div class="screenshots" id="screenshots1" style="display:none;">
+                <img src="m1.png" alt="Screenshot 1">
+                <img src="m2.png" alt="Screenshot 2">
+                <img src="m3.png" alt="Screenshot 3">
+                <img src="m4.png" alt="Screenshot 4">
+            </div>
         </div>
         <div class="card">
             <img src="note-goats-header.png" alt="Note Goats">
@@ -132,7 +148,13 @@
                     <li>Iterated on a rhythmic-hazard system to keep players engaged.</li>
                 </ul>
             </div>
+            <button onclick="toggleScreenshots('screenshots2')">Show screenshots</button>
             <a href="https://drive.google.com/drive/folders/10oShLBeDqWClNub59qKK15Lc9SdvA6Vm?usp=sharing" target="_blank">Download Link (Google Drive)</a>
+            <div class="screenshots" id="screenshots2" style="display:none;">
+                <img src="n1.png" alt="Screenshot 5">
+                <img src="n2.png" alt="Screenshot 6">
+                <img src="n3.png" alt="Screenshot 7">
+            </div>
         </div>
 
         <div class="card">
@@ -153,9 +175,15 @@
                     <li>Spearhead game's marketing efforts.</li>
                 </ul>
             </div>
-            
+            <button onclick="toggleScreenshots('screenshots3')">Show screenshots</button>
             <a href="https://youtu.be/bVChT4zv2VU" target="_blank">Watch the Trailer</a>
             <a href="https://drawn-together-studios.itch.io/drawn-together" target="_blank">Download Link (itch.io)</a>
+            <div class="screenshots" id="screenshots3" style="display:none;">
+                <img src="d1.png" alt="Screenshot 9">
+                <img src="d2.png" alt="Screenshot 10">
+                <img src="d3.png" alt="Screenshot 11">
+                <img src="d4.png" alt="Screenshot 12">
+            </div>
         </div>
     </div>
     <footer id="contact">
@@ -165,4 +193,14 @@
             <p>GitHub: ncerroneumich</p>
     </footer>
 </body>
+<script>
+    function toggleScreenshots(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "none") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>
 </html>
